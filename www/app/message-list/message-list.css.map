@@ -1,0 +1,10 @@
+﻿{
+	"version": 3,
+	"file": "message-list.css",
+	"sources": [
+		"message-list.scss"
+	],
+	"sourcesContent": [],
+	"mappings": "AAEa,aAAa,CAAC,YAAY,GAAG,GAAG,AAAA,UAAU,CAA/B;EACZ,UAAU,EAAE,GAAI;CADH;;AAKrB,aAAa,CAAC,kBAAkB,CAAb;EACf,WAAW,EAAE,GAAI;EACjB,cAAc,EAAE,GAAI;CAFJ",
+	"names": []
+}

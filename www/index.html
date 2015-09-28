@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+    <link href="css/angular-material.min.css" rel="stylesheet" />
+    <link href="css/main.min.css" rel="stylesheet" />
+    <link href="app/message-list/message-list.min.css" rel="stylesheet" />
+    <link href="app/message-details/message-details.min.css" rel="stylesheet" />
+    <link href="app/device-details/device-details.min.css" rel="stylesheet" />
+    <title>Copper kid</title>
+</head>
+<body id="app" layout="row">
+
+    <div layout="column" layout-fill>
+        <md-toolbar>
+            <div class="md-toolbar-tools">
+                <span flex></span>
+                <h2>
+                    <span>Copper kid</span>
+                </h2>
+                <span flex></span>
+            </div>
+        </md-toolbar>
+
+        <md-content flex class='md-padding'>
+            <ui-view></ui-view>
+        </md-content>
+
+        <div class="footer">
+            <md-toolbar>
+                <div class="md-toolbar-tools">
+                    <md-button ui-sref="list" class="md-icon-button" aria-label="Settings">
+                        <md-icon md-svg-icon="img/message-list.svg"></md-icon>
+                    </md-button>
+                    <span flex></span>
+                    <md-button ui-sref="deviceDetails" class="md-icon-button" aria-label="login">
+                        <md-icon md-svg-icon="img/device-info.svg"></md-icon>
+                    </md-button>
+                </div>
+            </md-toolbar>
+        </div>
+    </div>
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/moment.min.js"></script>
+    <script src="js/angular.js"></script>
+    <script src="js/angular-ui-router.js"></script>
+    <script src="js/angular-animate.min.js"></script>
+    <script src="js/angular-aria.min.js"></script>
+    <script src="js/angular-material.min.js"></script>
+    <script src="js/angular-moment.min.js"></script>
+    <script src="js/viewPortTweeker.js"></script>
+
+
+    <script src="app/app.js"></script>
+    <script src="app/_shared/messageTypeToImageName.filter.js"></script>
+    <script src="app/_shared/messageModel.js"></script>
+    <script src="app/_shared/messageService.js"></script>
+    <script src="app/device-details/deviceDetailsCtrl.js"></script>
+    <script src="app/message-details/messageDetailsCtrl.js"></script>
+    <script src="app/message-list/messageListCtrl.js"></script>
+    <script src="js/nfcBootStrapper.js"></script>
+
+
+    <script src="cordova.js"></script>
+    <script type="text/javascript">
+        document.addEventListener('deviceready', function onDeviceReady() {
+            if (device.platform === 'Win32NT') {
+                StatusBar.hide();
+            };
+
+            viewPortTweeker.updateViewPort(device);
+
+            angular.bootstrap(document.getElementById('app'), ['nfcApp']);
+
+            nfcBootstrapper.setupNfc();
+        }, false);
+    </script>
+</body>
+</html>

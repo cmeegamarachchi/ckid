@@ -1,0 +1,11 @@
+<md-list id="message-list">
+    <div ui-sref="details({id: message.id})" ng-repeat="message in vm.messages">
+        <md-list-item class="md-3-line">
+            <img ng-src="img/{{message.type | messageTypeToImageName}}.svg" alt="{{message.type}}" class="md-avatar"/>
+            <div class="md-list-item-text" layout="column">
+                <h4><span am-time-ago="message.date"></span></h4>
+                <h3>{{ message.header }}</h3>
+            </div>
+        </md-list-item>
+    </div>
+</md-list>

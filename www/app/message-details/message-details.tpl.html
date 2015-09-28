@@ -1,0 +1,32 @@
+<md-card id="message-details">
+    <img ng-src="img/{{vm.message.type | messageTypeToImageName}}.svg" alt="{{vm.message.type}}" />
+    <md-card-content>
+        <md-list>
+            <md-list-item class="md-2-line">
+                <div class="md-list-item-text" layout="column">
+                    <h3>Message type</h3>
+                    <h4>{{vm.message.type}}</h4>
+                </div>
+            </md-list-item>
+            <md-list-item class="md-2-line">
+                <div class="md-list-item-text" layout="column">
+                    <h3>Intercepted on</h3>
+                    <h4><span am-time-ago="vm.message.date"></span></h4>
+                </div>
+            </md-list-item>
+            <md-list-item class="md-2-line">
+                <div class="md-list-item-text" layout="column">
+                    <h3>Header</h3>
+                    <h4>{{vm.message.header}}</h4>
+                </div>
+            </md-list-item>
+            <md-list-item class="md-2-line">
+                <div class="md-list-item-text" layout="column">
+                    <h3>Body</h3>
+                    <h4>{{vm.message.body}}</h4>
+                </div>
+            </md-list-item>
+
+        </md-list>
+    </md-card-content>
+</md-card>

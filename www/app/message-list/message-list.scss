@@ -1,0 +1,12 @@
+#message-list {
+    md-list-item {
+        > img.md-avatar {
+            margin-top: 6px;
+        }
+    }
+
+    .md-list-item-text {
+        padding-top: 2px;
+        padding-bottom: 2px;
+    }
+}

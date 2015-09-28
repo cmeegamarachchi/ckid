@@ -1,0 +1,10 @@
+﻿{
+	"version": 3,
+	"file": "device-details.css",
+	"sources": [
+		"device-details.scss"
+	],
+	"sourcesContent": [],
+	"mappings": "AACM,kBAAkB,GAAG,EAAE,CAApB;EACD,aAAa,EAAE,GAAI;CADjB;;AAIJ,kBAAkB,GAAG,CAAC,CAApB;EACA,UAAU,EAAE,CAAE;CADb",
+	"names": []
+}

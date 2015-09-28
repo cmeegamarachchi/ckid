@@ -1,0 +1,10 @@
+﻿{
+	"version": 3,
+	"file": "message-details.css",
+	"sources": [
+		"message-details.scss"
+	],
+	"sourcesContent": [],
+	"mappings": "AACM,gBAAgB,GAAG,GAAG,CAAlB;EACF,MAAM,EAAE,IAAK;EACb,KAAK,EAAE,IAAK;EACZ,MAAM,EAAE,IAAK;CAHV;;AAOP,gBAAgB,CAAC,YAAY,CAAjB;EAER,UAAU,EAAE,IAAK;CAFR;;AAIT,gBAAgB,CAAC,YAAY,CAAC,kBAAkB,CAA7B;EACf,WAAW,EAAE,GAAI;EACjB,cAAc,EAAE,GAAI;CAFJ;;AAId,gBAAgB,CAAC,YAAY,CAAC,kBAAkB,GAAG,EAAE,CAAlD;EACD,UAAU,EAAE,GAAI;CADd",
+	"names": []
+}
